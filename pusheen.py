@@ -1,8 +1,6 @@
 import os
 import discord
-import asyncio
 import random
-import quiz
 
 from discord.ext import commands
 
@@ -14,7 +12,6 @@ load_dotenv()
 bot = commands.Bot(command_prefix="p.", case_insensitive=True)
 bot.remove_command('help')
 
-# TOKEN = "NjgyNzg4MDM0MTUxODQxNzky.XuaFYw.SP8sZiEKWaMT1RE-N7wlRfALUO0"
 TOKEN = os.environ.get("DISCORD_TOKEN")
 COLOR = 0xFF85AA
 MADO_USER_ID = 283695131738243084
